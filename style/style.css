@@ -1,0 +1,14 @@
+
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+footer
+{
+    border: red solid 2px;
+    height: 15vh;
+    width: 100%;
+}

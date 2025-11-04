@@ -1,0 +1,61 @@
+
+/*******************************************************
+ *                                                     *
+ *               GENERE PAR CHATGPT                    *
+ *                                                     *
+ *                 Description :                       *
+ *   Une petite explication de l'orienter objet        *
+ *                                                     *
+ *******************************************************/
+
+3. Classes
+
+Depuis ES6, JavaScript propose une syntaxe plus intuitive avec les classes. Cela simplifie la création et la gestion des objets.
+
+class Voiture {
+  constructor(marque, modele, annee) {
+    this.marque = marque;
+    this.modele = modele;
+    this.annee = annee;
+  }
+
+  demarrer() {
+    console.log(`${this.marque} ${this.modele} démarre !`);
+  }
+}
+
+// Créer des instances
+const voiture1 = new Voiture("Toyota", "Corolla", 2020);
+const voiture2 = new Voiture("Honda", "Civic", 2022);
+
+voiture1.demarrer(); // Toyota Corolla démarre !
+
+4. Héritage
+
+L'héritage permet de créer des classes spécialisées à partir d'une classe de base.
+
+class Vehicule {
+  constructor(marque, modele) {
+    this.marque = marque;
+    this.modele = modele;
+  }
+
+  info() {
+    console.log(`Marque: ${this.marque}, Modèle: ${this.modele}`);
+  }
+}
+
+class Voiture extends Vehicule {
+  constructor(marque, modele, annee) {
+    super(marque, modele); // Appelle le constructeur parent
+    this.annee = annee;
+  }
+
+  demarrer() {
+    console.log(`${this.marque} ${this.modele} (${this.annee}) démarre !`);
+  }
+}
+
+const voiture = new Voiture("Tesla", "Model S", 2023);
+voiture.info(); // Marque: Tesla, Modèle: Model S
+voiture.demarrer(); // Tesla Model S (2023) démarre !

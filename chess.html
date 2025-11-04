@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damier d'échecs</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/chessBoard.css">
+</head>
+
+<body>
+    <header>
+        <div id="Space" style="height: 5vh;">
+        </div>
+        <h1>Joueur <span id="player">1</span>  : <span id="timer">10m 0s</span></h1>
+        <div id="Space" style="height: 3vh;">
+            <hr>
+        </div>
+    </header>
+    <div id="chessboard">
+        <div class="row" id="row_0">
+            <div id="column_0" class="tile black">&#9820;</div> <!-- Tour noire -->
+            <div id="column_1" class="tile white">&#9822;</div> <!-- Cavalier noir -->
+            <div id="column_2" class="tile black">&#9821;</div> <!-- Fou noir -->
+            <div id="column_3" class="tile white">&#9819;</div> <!-- Reine noire -->
+            <div id="column_4" class="tile black">&#9818;</div> <!-- Roi noir -->
+            <div id="column_5" class="tile white">&#9821;</div> <!-- Fou noir -->
+            <div id="column_6" class="tile black">&#9822;</div> <!-- Cavalier noir -->
+            <div id="column_7" class="tile white">&#9820;</div> <!-- Tour noire -->
+        </div>
+        <div class="row" id="row_1">
+            <div id="column_0" class="tile white">&#9823;</div> <!-- Pion noir -->
+            <div id="column_1" class="tile black">&#9823;</div>
+            <div id="column_2" class="tile white">&#9823;</div>
+            <div id="column_3" class="tile black">&#9823;</div>
+            <div id="column_4" class="tile white">&#9823;</div>
+            <div id="column_5" class="tile black">&#9823;</div>
+            <div id="column_6" class="tile white">&#9823;</div>
+            <div id="column_7" class="tile black">&#9823;</div>
+        </div>
+        <!-- Cases vides -->
+        <div class="row" id="row_2">
+            <div id="column_0" class="tile black"></div>
+            <div id="column_1" class="tile white"></div>
+            <div id="column_2" class="tile black"></div>
+            <div id="column_3" class="tile white"></div>
+            <div id="column_4" class="tile black"></div>
+            <div id="column_5" class="tile white"></div>
+            <div id="column_6" class="tile black"></div>
+            <div id="column_7" class="tile white"></div>
+        </div>
+        <div class="row" id="row_3">
+            <div id="column_0" class="tile white"></div>
+            <div id="column_1" class="tile black"></div>
+            <div id="column_2" class="tile white"></div>
+            <div id="column_3" class="tile black"></div>
+            <div id="column_4" class="tile white"></div>
+            <div id="column_5" class="tile black"></div>
+            <div id="column_6" class="tile white"></div>
+            <div id="column_7" class="tile black"></div>
+        </div>
+        <div class="row" id="row_4">
+            <div id="column_0" class="tile black"></div>
+            <div id="column_1" class="tile white"></div>
+            <div id="column_2" class="tile black"></div>
+            <div id="column_3" class="tile white"></div>
+            <div id="column_4" class="tile black"></div>
+            <div id="column_5" class="tile white"></div>
+            <div id="column_6" class="tile black"></div>
+            <div id="column_7" class="tile white"></div>
+        </div>
+        <div class="row" id="row_5">
+            <div id="column_0" class="tile white"></div>
+            <div id="column_1" class="tile black"></div>
+            <div id="column_2" class="tile white"></div>
+            <div id="column_3" class="tile black"></div>
+            <div id="column_4" class="tile white"></div>
+            <div id="column_5" class="tile black"></div>
+            <div id="column_6" class="tile white"></div>
+            <div id="column_7" class="tile black"></div>
+        </div>
+        <!-- Pions blancs -->
+        <div class="row" id="row_6">
+            <div id="column_0" class="tile black">&#9817;</div> <!-- Pion blanc -->
+            <div id="column_1" class="tile white">&#9817;</div>
+            <div id="column_2" class="tile black">&#9817;</div>
+            <div id="column_3" class="tile white">&#9817;</div>
+            <div id="column_4" class="tile black">&#9817;</div>
+            <div id="column_5" class="tile white">&#9817;</div>
+            <div id="column_6" class="tile black">&#9817;</div>
+            <div id="column_7" class="tile white">&#9817;</div>
+        </div>
+        <div class="row" id="row_7">
+            <div id="column_0" class="tile white">&#9814;</div> <!-- Tour blanche -->
+            <div id="column_1" class="tile black">&#9816;</div> <!-- Cavalier blanc -->
+            <div id="column_2" class="tile white">&#9815;</div> <!-- Fou blanc -->
+            <div id="column_3" class="tile black">&#9813;</div> <!-- Reine blanche -->
+            <div id="column_4" class="tile white">&#9812;</div> <!-- Roi blanc -->
+            <div id="column_5" class="tile black">&#9815;</div> <!-- Fou blanc -->
+            <div id="column_6" class="tile white">&#9816;</div> <!-- Cavalier blanc -->
+            <div id="column_7" class="tile black">&#9814;</div> <!-- Tour blanche -->
+        </div>
+    </div>
+    <h4>Joueur <span id="other_player">2</span>  : <span id="other_timer">10m 0s</span></h4>
+    <div id="Space" style="height: 15vh;">
+    </div>
+    <script src="script/function.js"></script>
+    <script src="script/objects.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
